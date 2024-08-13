@@ -108,7 +108,7 @@ bool processBrightness(char c) {
     if(c == '0') {
       ledState.brightness = 0;
     } else if (c == '1') { 
-      ledState.brightness = 10;
+      ledState.brightness = 5;
     } else {
       uint8_t amt = (c - '0') + 1;
       ledState.brightness = amt * 25.5;
