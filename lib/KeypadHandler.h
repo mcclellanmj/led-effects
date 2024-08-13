@@ -58,6 +58,8 @@ bool KeypadHandler::processMultiKey(char &key, State &state) {
     return processBrightness(key, state);
   } else if(this->inputModifier == COLOR) {
     return this->processColor(key, state);
+  } else {
+    return false;
   }
 }
 

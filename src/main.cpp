@@ -13,7 +13,7 @@ struct State ledState = {
 
 CRGB leds[NUM_LEDS];
 
-bool processState() {
+void processState() {
   Serial.println("update state");
   Serial.println(ledState.brightness);
   FastLED.setBrightness(ledState.brightness);
